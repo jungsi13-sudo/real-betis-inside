@@ -5,7 +5,7 @@
  * 비워두면 시연 모드로 실행하며 어떤 개인정보도 외부로 전송하지 않습니다.
  */
 const BETIS_CONFIG = Object.freeze({
-  appsScriptUrl: '',  // 예: https://script.google.com/macros/s/배포ID/exec
+  appsScriptUrl: 'https://script.google.com/macros/s/AKfycbxvDGXReiZ_qiTQtEpdsQXxxniMDSXk4y80Eat6A5Tsw585LYfmR_1uxOECl2LO7yuq/exec',  
   seatsTotal: 15,
   seatsBooked: 11,
   seatsAsOf: '2026.11.02'
