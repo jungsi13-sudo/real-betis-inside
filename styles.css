@@ -1063,10 +1063,10 @@
 .hero-program-head h2 em {color:#d6fa86}
 .hero-program-head p {font-size:12px;line-height:1.5;color:#cee5d2;margin:0}
 .hero-program-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
-.hero-program-card {min-height:176px;min-width:0;padding:16px 14px 15px;display:flex;flex-direction:column;align-items:flex-start;background:rgba(9,57,39,.82);color:#fff;border:1px solid rgba(193,241,180,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:inset 0 3px 0 #d1f879}
+.hero-program-card {min-height:176px;min-width:0;padding:16px 14px 15px;display:flex;flex-direction:column;align-items:flex-start;background:rgba(9,57,39,.82);color:#fff;border:1px solid rgba(193,241,180,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .hero-program-card:nth-child(2) {background:rgba(14,91,57,.85)}
 .hero-program-card-coach {background:rgba(9,43,34,.95)}
-.hero-program-card-ucl {background:rgba(239,250,218,.97);color:#0b4731;border-color:#e2f5c9;box-shadow:inset 0 3px 0 #b7e858}
+.hero-program-card-ucl {background:rgba(239,250,218,.97);color:#0b4731;border-color:#e2f5c9}
 .hero-program-label {font-size:9.5px;letter-spacing:.07em;font-weight:850;line-height:1.4;color:#d5f4b3;min-height:26px}
 .hero-program-card-ucl .hero-program-label {color:#377b52}
 .hero-program-card>strong {font-size:clamp(46px,4.5vw,68px);line-height:1.02;letter-spacing:-.075em;margin:0 0 10px;white-space:nowrap;color:#e6ffb9;font-weight:850}
