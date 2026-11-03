@@ -447,3 +447,691 @@
   .notice-remain[data-seat-message]{font-size:10px}
   .hero-capacity-bottom [data-seat-message]{max-width:55%;font-size:11px}
 }
+
+
+/* v9: compact, non-misleading installment information above recruitment notice */
+.installment-teaser{background:#0f5038;color:#f3fff3;position:relative;z-index:72}
+.installment-teaser-inner{min-height:40px;padding:8px 0;display:flex;align-items:center;justify-content:center;gap:12px 18px;flex-wrap:wrap;line-height:1.4}
+.installment-teaser-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:850;white-space:nowrap;color:#d3ff96}
+.installment-teaser-label span{font-size:16px;line-height:1}
+.installment-teaser-desc{font-size:12px;color:#e3f4e5}
+.installment-teaser-desc strong{color:#fff;font-weight:850}
+.installment-teaser a{font-size:11px;text-decoration:underline;text-underline-offset:4px;color:#d5ff96;font-weight:780;white-space:nowrap}
+@media(max-width:780px){.installment-teaser-inner{gap:4px 10px;justify-content:space-between}.installment-teaser-label{font-size:11px}.installment-teaser-desc{font-size:11px}.installment-teaser a{font-size:10px}}
+@media(max-width:520px){.installment-teaser-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1px 6px;padding:6px 0;min-height:47px}.installment-teaser-label{font-size:10px}.installment-teaser-desc{grid-column:1;font-size:10px;line-height:1.4}.installment-teaser a{grid-column:2;grid-row:1 / 3;align-self:center;font-size:10px;text-align:right}.installment-teaser-label span{font-size:13px}}
+.hero-betis-proof-link{display:flex;align-items:center;gap:8px;flex-wrap:wrap;max-width:100%;margin-top:17px;color:#d5e7d9;text-decoration:none;font-size:12px;font-weight:650;line-height:1.5}
+.hero-betis-proof-link>span{color:#b7ed79;background:rgba(183,237,121,.1);padding:3px 7px;font-size:10px;font-weight:850}
+.hero-betis-proof-link b{color:#cfff7d}
+.hero-betis-proof-link:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* Why Real Betis: proof through top-flight and youth-team competition results */
+.betis-proof{background:#f0f4ed;color:#122d20;scroll-margin-top:78px}
+.betis-proof-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(370px,.87fr);gap:46px;align-items:end}
+.betis-proof-intro .section-title{margin:23px 0 18px;font-size:clamp(43px,4.6vw,65px)}
+.betis-proof-lead{font-size:16px;line-height:1.8;color:#526b57;max-width:590px}
+.betis-proof-ranks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.betis-rank{padding:22px 20px 19px;background:#103a2a;color:#fff;min-width:0;display:flex;flex-direction:column;justify-content:space-between;min-height:200px}
+.betis-rank:nth-child(2){background:#d8f298;color:#113721}
+.betis-rank>span{font-size:11px;line-height:1.5;color:#cfe7d6;font-weight:650}
+.betis-rank:nth-child(2)>span{color:#426844}
+.betis-rank strong{font-weight:900;font-size:clamp(64px,5.5vw,90px);letter-spacing:-.115em;line-height:1.05;margin:7px 0}
+.betis-rank strong small{font-size:.3em;letter-spacing:-.035em;margin-left:6px}
+.betis-rank p{font-size:11px;line-height:1.4;color:#c6e0cd}
+.betis-rank:nth-child(2) p{color:#547353}
+.betis-proof-main{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:0;margin-top:45px;min-height:460px}
+.betis-proof-image{position:relative;margin:0;background:#144c33;min-height:415px;overflow:hidden}
+.betis-proof-image img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.betis-proof-image:after{content:"";position:absolute;inset:62% 0 0;background:linear-gradient(transparent,rgba(6,35,22,.85))}
+.betis-proof-image figcaption{position:absolute;bottom:25px;left:29px;right:25px;z-index:1;color:#f4fff6;font-size:10px;line-height:1.4;letter-spacing:.1em;font-weight:750}
+.betis-proof-youth{background:#fff;padding:39px 42px 34px;display:flex;flex-direction:column;justify-content:center}
+.betis-proof-flag{font-size:13px;font-weight:850;color:#1d7047;margin-bottom:11px}
+.betis-youth-score{border-bottom:1px solid #e2e9e1;padding:19px 0;display:flex;flex-direction:column;gap:7px}
+.betis-youth-score span{font-size:12px;color:#667b6b;font-weight:550}
+.betis-youth-score b{font-size:clamp(18px,2.1vw,26px);letter-spacing:-.045em;line-height:1.3}
+.betis-youth-score em{color:#177b49;font-style:normal;font-weight:900}
+.betis-youth-score small{font-size:12px;color:#54725c}
+.betis-proof-youth>p{font-size:13px;line-height:1.8;color:#5c7561;margin:22px 0 0}
+.betis-proof-footer{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:24px;margin:18px 0 35px;align-items:start}
+.betis-proof-links{display:flex;gap:6px 12px;flex-wrap:wrap;font-size:11px}
+.betis-proof-links span{font-weight:850;color:#244f32;margin-right:4px}
+.betis-proof-links a{color:#1b7548;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.betis-proof-footer>p{font-size:11px;color:#718072;line-height:1.6}
+.betis-proof-next{padding:27px 33px;background:#e0ebd7;display:flex;align-items:center;flex-wrap:wrap;gap:7px 20px}
+.betis-proof-next span{font-size:13px;color:#536b55}
+.betis-proof-next strong{font-size:16px;letter-spacing:-.03em}
+.betis-proof-next a{font-size:12px;font-weight:850;color:#177343;text-decoration:underline;text-underline-offset:4px;margin-left:auto}
+
+/* Payment assistance immediately after price comparison */
+.installment-info{scroll-margin-top:90px;background:#f0f5e9;color:#173526;border:1px solid #c7ddbf;margin-top:23px;padding:27px 31px}
+.installment-info-head{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.installment-info-eyebrow{font-size:10px;color:#356f4b;font-weight:830;letter-spacing:.09em}
+.installment-info h3{font-size:clamp(21px,2.5vw,31px);letter-spacing:-.06em;line-height:1.3;margin:7px 0}
+.installment-info h3 em{font-style:normal;color:#1a834f}
+.installment-info-head p{font-size:13px;color:#53705d;line-height:1.7;max-width:690px}
+.installment-info-emblem{text-align:center;flex:none;display:flex;flex-direction:column;align-items:center;background:#d8f29f;padding:15px 24px;min-width:144px}
+.installment-info-emblem span{font-size:41px;line-height:1.05;font-weight:900;color:#134c31;letter-spacing:-.085em}
+.installment-info-emblem small{font-size:10px;margin-top:5px;color:#3e6843;font-weight:700}
+.installment-cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:22px 0}
+.installment-cards span{background:white;border:1px solid #d6e4cf;min-width:0;display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:850;padding:15px 6px}
+.installment-info-disclaimer{border-top:1px solid #cbdccd;padding-top:17px;display:grid;grid-template-columns:116px minmax(0,1fr);gap:12px;align-items:start}
+.installment-info-disclaimer>b{color:#1f6d43;font-size:12px}
+.installment-info-disclaimer p{font-size:12px;line-height:1.8;color:#576d5b}
+.installment-info-disclaimer strong{color:#274d34}
+.installment-info-expand{margin-top:17px;border-top:1px solid #d0ded0;padding-top:13px}
+.installment-info-expand summary{cursor:pointer;font-size:12px;font-weight:800;color:#275e3f;display:flex;align-items:center;gap:8px;justify-content:space-between;list-style:none}
+.installment-info-expand summary::-webkit-details-marker{display:none}
+.installment-info-expand p{color:#5b725d;font-size:12px;line-height:1.75;margin:12px 0 8px}
+.installment-info-expand a{font-size:11px;text-decoration:underline;text-underline-offset:4px;color:#1f6f46}
+.installment-info-source{margin:15px 0 0;font-size:10px;color:#78907a}
+.installment-info-source a{color:#206947;text-decoration:underline}
+.closing-finance-link{display:block;color:#d8f59f;text-decoration:underline;text-underline-offset:4px;font-size:13px;font-weight:750;margin:18px auto 8px}
+
+@media(max-width:1050px){.betis-proof-intro{grid-template-columns:1fr;gap:22px}.betis-proof-ranks{max-width:660px}.betis-proof-main{min-height:385px}.betis-proof-image{min-height:385px}.betis-proof-youth{padding:29px}.betis-proof-next a{margin-left:0}}
+@media(max-width:780px){.betis-proof{scroll-margin-top:66px}.betis-proof-main{grid-template-columns:1fr}.betis-proof-image{min-height:390px}.betis-proof-youth{padding:29px 27px}.betis-proof-footer{grid-template-columns:1fr;gap:9px}.installment-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.installment-info{padding:23px}.installment-info-emblem{min-width:115px}.installment-info-emblem span{font-size:34px}}
+@media(max-width:520px){.betis-proof-intro .section-title{font-size:clamp(34px,9vw,45px)}.betis-proof-lead{font-size:14px}.betis-proof-ranks{gap:8px}.betis-rank{min-height:151px;padding:15px 13px}.betis-rank strong{font-size:60px}.betis-rank>span{font-size:10px}.betis-rank p{font-size:10px}.betis-proof-main{margin-top:26px}.betis-proof-image{min-height:300px}.betis-proof-image figcaption{font-size:9px;bottom:17px;left:19px}.betis-proof-youth{padding:22px 18px}.betis-youth-score b{font-size:19px}.betis-youth-score span,.betis-youth-score small{font-size:11px}.betis-proof-next{padding:20px 18px;flex-direction:column;align-items:flex-start;gap:10px}.betis-proof-next strong{font-size:15px}.betis-proof-footer{margin:15px 0 24px}.installment-info{padding:19px 16px;margin-top:14px}.installment-info-head{gap:12px}.installment-info h3{font-size:22px}.installment-info-head p{font-size:11px}.installment-info-emblem{min-width:86px;padding:12px 8px}.installment-info-emblem span{font-size:29px}.installment-info-emblem small{font-size:8px}.installment-cards{gap:6px;margin:15px 0}.installment-cards span{font-size:11px;padding:13px 4px}.installment-info-disclaimer{grid-template-columns:1fr;gap:5px}.installment-info-disclaimer p{font-size:11px}.hero-betis-proof-link{font-size:11px}}
+@media(max-width:350px){.installment-teaser-inner{grid-template-columns:1fr auto}.installment-teaser a{font-size:9px}.betis-rank strong{font-size:51px}.betis-rank p{font-size:9px}.installment-info-emblem{min-width:76px}.installment-info-emblem span{font-size:25px}}
+
+/* ============================================================
+   V10 · Why REAL BETIS: trophy-red editorial slide
+   Uses the user-supplied 2026 Copa del Rey Juvenil photograph.
+   ============================================================ */
+.betis-proof{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(82px,9vw,130px) 0 clamp(75px,8vw,116px);
+  background:linear-gradient(123deg,#db2b26 0%,#bc1c2b 47%,#721125 100%);
+  color:#fff;
+}
+.betis-proof::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:repeating-linear-gradient(120deg,transparent 0 170px,rgba(255,255,255,.055) 171px 172px,transparent 173px 320px),
+    radial-gradient(ellipse at 15% 14%,rgba(255,196,142,.20),transparent 45%),
+    radial-gradient(ellipse at 90% 84%,rgba(50,5,24,.40),transparent 52%);
+}
+.betis-proof::after{
+  content:"BETIS";position:absolute;right:-.025em;top:.45em;z-index:-1;
+  font-size:clamp(160px,24vw,410px);line-height:1;font-weight:950;letter-spacing:-.12em;
+  color:rgba(255,255,255,.035);pointer-events:none;transform:rotate(-5deg);
+}
+.betis-proof-shell{position:relative;z-index:1}
+.betis-proof-chapter{border-top:1px solid rgba(255,255,255,.45);padding:15px 0 0;margin-bottom:50px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:11px;letter-spacing:.22em;font-weight:850;color:#ffe5d7}
+.betis-proof-chapter i{width:9px;height:9px;display:inline-block;background:#ffe7aa;border-radius:50%;margin-right:10px;box-shadow:0 0 0 5px rgba(255,232,169,.16)}
+.betis-proof .eyebrow{color:#ffddc4}.betis-proof .eyebrow .dash{background:#ffebae}
+.betis-proof-intro{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:36px;align-items:end}
+.betis-proof-intro .section-title{font-size:clamp(45px,5.4vw,77px);font-weight:920;letter-spacing:-.075em;line-height:1.12;margin:18px 0 24px;color:#fff}
+.betis-title-accent{color:#ffdfb0;display:inline-block}
+.betis-proof-lead{font-size:clamp(14px,1.25vw,17px);color:#ffdbd4;line-height:1.75;max-width:620px;margin:0}
+.betis-proof-lead strong{color:#fff;font-weight:780}
+.betis-proof-ranks{gap:12px;align-items:stretch}
+.betis-rank{background:rgba(67,9,25,.37);color:#fff;border:1px solid rgba(255,236,221,.35);min-height:207px;box-shadow:0 10px 25px rgba(66,0,20,.06);padding:20px 22px}
+.betis-rank:nth-child(2){background:#ffefda;color:#7b1d2b;border:1px solid #ffefda}
+.betis-rank>span{color:#ffe4dc;font-weight:720}
+.betis-rank:nth-child(2)>span{color:#943d3b}
+.betis-rank strong{font-size:clamp(66px,6vw,95px);line-height:1.0;margin:12px 0;letter-spacing:-.095em}
+.betis-rank p{color:#ffe3da;font-size:11px}
+.betis-rank:nth-child(2) p{color:#9a5e57}
+.betis-proof-main{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);margin-top:48px;min-height:470px;box-shadow:0 30px 60px rgba(65,0,22,.22);border:1px solid rgba(255,255,255,.27)}
+.betis-proof-image{background:#671220;min-height:470px}
+.betis-proof-image img{object-position:center center;filter:saturate(1.09) contrast(1.02)}
+.betis-proof-image:after{inset:56% 0 0;background:linear-gradient(transparent,rgba(40,7,17,.85))}
+.betis-proof-image figcaption{bottom:22px;left:26px;right:25px;display:flex;flex-direction:column;align-items:flex-start;gap:9px;color:#fff;font-size:11px;letter-spacing:.105em;line-height:1.4;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.betis-proof-photo-tag{font-size:10px;background:#fff2e0;color:#77212b;padding:6px 11px;text-shadow:none;letter-spacing:.12em;font-weight:900}
+.betis-proof-youth{background:linear-gradient(150deg,#620e25,#400918);color:#fff;padding:43px 36px 38px}
+.betis-proof-flag{color:#ffd29c;font-size:10px;letter-spacing:.16em;margin:0 0 15px;font-weight:900}
+.betis-proof-youth h3{font-size:clamp(25px,2.5vw,34px);font-weight:850;letter-spacing:-.055em;line-height:1.28;margin:0 0 12px}
+.betis-proof-youth h3 em{color:#ffceab;font-style:normal}
+.betis-youth-score{border-bottom:1px solid rgba(255,255,255,.19);padding:18px 0;gap:6px}
+.betis-youth-score span{color:#edb7b5;font-size:11px}
+.betis-youth-score b{color:#fff;font-size:clamp(19px,1.65vw,25px);white-space:normal}
+.betis-youth-score em{color:#ffcc9a}
+.betis-youth-score small{color:#e8aba7;font-size:11px}
+.betis-proof-youth>p{color:#e2b6b3;font-size:12px;margin:20px 0 0}
+.betis-proof-footer{grid-template-columns:1fr;gap:11px;margin:20px 0 30px}
+.betis-proof-links span{color:#fff7e9}
+.betis-proof-links a{color:#ffddaa;text-decoration-thickness:1px}
+.betis-proof-footer>p{font-size:11px;line-height:1.7;color:#f5c8c4}
+.betis-proof-next{background:#fff0db;color:#661829;padding:24px 30px;justify-content:space-between;gap:12px;align-items:center}
+.betis-proof-next>div{display:flex;flex-direction:column;gap:4px}
+.betis-proof-next span{color:#ab4c49;font-size:10px;letter-spacing:.13em;font-weight:850}
+.betis-proof-next strong{color:#5c1428;font-size:clamp(17px,1.6vw,22px);line-height:1.42}
+.betis-proof-next a{background:#601325;color:#fff;padding:13px 19px;text-decoration:none;font-size:12px;margin:0;white-space:nowrap}
+.betis-proof-next a:hover{background:#8e1b2c}
+.betis-proof-next a span{color:#fff;font-size:12px;margin-left:6px}
+/* Compact installment: only requested card names and concise guidance */
+.installment-info{background:#f0f5e9;border:1px solid #c7ddbf}
+.installment-info h3{font-weight:870}
+.installment-info h3 em{font-weight:900}
+.installment-info-emblem small{font-size:11px;color:#275e3f}
+.installment-info-disclaimer{grid-template-columns:86px minmax(0,1fr)}
+.installment-info-disclaimer p{line-height:1.65;margin:0;color:#4b6653}
+.installment-info-disclaimer strong{color:#234c34}
+@media(max-width:1050px){.betis-proof-intro{grid-template-columns:1fr;gap:27px}.betis-proof-ranks{max-width:750px}.betis-proof-main{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr)}.betis-proof-next{flex-wrap:wrap}}
+@media(max-width:780px){.betis-proof{padding:75px 0 77px}.betis-proof-chapter{margin-bottom:32px}.betis-proof-main{grid-template-columns:1fr;min-height:auto;margin-top:30px}.betis-proof-image{min-height:385px}.betis-proof-youth{padding:32px}.betis-proof-footer{margin:17px 0 24px}.betis-proof-next a{padding:12px 16px}}
+@media(max-width:520px){.betis-proof{padding:52px 0 60px}.betis-proof-chapter{font-size:9px;letter-spacing:.12em;gap:9px;margin-bottom:25px}.betis-proof-chapter span:last-child{font-size:9px;white-space:nowrap}.betis-proof-intro .section-title{font-size:clamp(36px,10vw,48px);line-height:1.13;margin:15px 0 18px}.betis-proof-lead{font-size:13px;line-height:1.7}.betis-proof-ranks{gap:8px}.betis-rank{min-height:156px;padding:15px 12px}.betis-rank strong{font-size:clamp(56px,16vw,71px);margin:8px 0}.betis-rank>span{font-size:10px}.betis-rank p{font-size:9px}.betis-proof-main{margin-top:26px}.betis-proof-image{min-height:292px}.betis-proof-image figcaption{bottom:16px;left:15px;right:16px;gap:6px;font-size:9px}.betis-proof-photo-tag{font-size:9px;padding:4px 7px}.betis-proof-youth{padding:27px 22px}.betis-proof-youth h3{font-size:28px}.betis-youth-score{padding:16px 0}.betis-youth-score b{font-size:20px}.betis-proof-footer>p{font-size:10px}.betis-proof-next{padding:21px 19px}.betis-proof-next strong{font-size:18px}.betis-proof-next a{font-size:11px;white-space:normal}.installment-info h3{font-size:23px}.installment-info-disclaimer{grid-template-columns:1fr;gap:4px}.installment-info-disclaimer b{font-size:11px}.installment-info-disclaimer p{font-size:11px}}
+@media(max-width:350px){.betis-proof-chapter span:last-child{display:none}.betis-rank p{font-size:9px}.betis-proof-image{min-height:260px}}
+
+/* V10 payment readability refinement */
+.installment-mobile-break{display:none}
+@media(max-width:520px){
+  .installment-mobile-break{display:block}
+  .installment-info-head>div:first-child{min-width:0;flex:1}
+  .installment-info h3{font-size:clamp(17px,5.2vw,22px);letter-spacing:-.065em;line-height:1.36;margin:10px 0 2px}
+  .installment-info h3 em{white-space:nowrap}
+  .installment-info-emblem{min-width:77px;max-width:88px;padding:13px 8px}
+  .installment-info-emblem span{font-size:clamp(25px,7vw,33px)}
+  .installment-info-emblem small{font-size:9px;white-space:nowrap}
+}
+
+
+/* V11: Spanish location badge + photo-led companion section */
+.flag-spain{display:inline-block;flex:none;position:relative;width:21px;height:14px;vertical-align:middle;border-radius:2px;background:linear-gradient(to bottom,#c62836 0 25%,#ffd03b 25% 75%,#c62836 75% 100%);box-shadow:0 0 0 1px rgba(255,255,255,.25);overflow:hidden}
+.flag-spain::after{content:"";position:absolute;top:42%;left:27%;height:26%;width:2px;border-radius:1px;background:#bf3431;box-shadow:2px 0 #fff5bb}
+.brand-type .brand-ko{display:inline-flex;align-items:center;gap:7px}
+.brand-type .flag-header{width:17px;height:12px}
+.camp-identity-kicker .flag-identity{width:23px;height:15px}
+.companions{background:linear-gradient(130deg,#0e3d2f 0%,#0a2f26 50%,#082920 100%);overflow:hidden}
+.companions-layout{grid-template-columns:minmax(0,.79fr) minmax(0,1.21fr);gap:clamp(34px,5vw,72px);align-items:center}
+.companions-intro{min-width:0}
+.companions .section-title{font-size:clamp(35px,4.1vw,61px);line-height:1.23;letter-spacing:-.06em;margin:27px 0 22px}
+.companions-intro>p{max-width:430px;color:#c3d8ce;font-size:16px;line-height:1.81;margin-bottom:26px}
+.companion-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-width:0}
+.companion-card{background:#eff3e9;min-width:0;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.2);box-shadow:0 16px 26px rgba(0,0,0,.1)}
+.companion-portrait{position:relative;aspect-ratio:4 / 5;overflow:hidden;background:#d7e1d3}
+.companion-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:saturate(.96);transition:transform .4s ease}
+.companion-card:nth-child(2) .companion-portrait img{object-position:center 50%}
+.companion-card:hover img{transform:scale(1.035)}
+.companion-index{position:absolute;left:12px;top:11px;background:rgba(6,44,31,.86);color:#d7fb84;display:flex;align-items:center;justify-content:center;width:29px;height:29px;font-size:11px;font-weight:800;letter-spacing:.02em;border:1px solid rgba(255,255,255,.2)}
+.companion-meta{flex:1;padding:17px 13px 18px;color:#113529}
+.companion-role{font-size:8px;letter-spacing:.095em;color:#39805b;font-weight:800;white-space:nowrap}
+.companion-meta h3{font-size:clamp(21px,1.65vw,27px);letter-spacing:-.055em;line-height:1.15;margin:7px 0 7px;color:#113527}
+.companion-meta p{font-size:11px;line-height:1.55;color:#648173;margin:0}
+.kickstar-escort{padding:18px 18px 16px;border:1px solid rgba(190,239,202,.3);background:rgba(255,255,255,.06);display:flex;align-items:flex-start;gap:13px;max-width:445px}
+.escort-icon{display:flex;flex:none;width:36px;height:36px;align-items:center;justify-content:center;background:#d1f879;color:#124531}
+.escort-icon svg{width:21px;height:21px}
+.escort-kicker{display:block;font-size:9px;font-weight:800;letter-spacing:.13em;color:#d1f879;margin-bottom:7px}
+.kickstar-escort h3{color:#fff;font-size:16px;line-height:1.5;letter-spacing:-.035em;margin:0 0 7px;font-weight:800}
+.kickstar-escort p{font-size:12px;color:#bfd4c7;line-height:1.7;margin:0}
+@media(max-width:1100px) and (min-width:781px){.companions-layout{grid-template-columns:minmax(0,.69fr) minmax(0,1.31fr);gap:28px}.companion-card{min-width:0}.companion-meta{padding:13px 9px}.companion-role{font-size:7px}.companion-meta h3{font-size:20px}}
+@media(max-width:780px){.companions-layout{display:grid;grid-template-columns:1fr;gap:28px}.companions .section-title{font-size:clamp(38px,7vw,53px);margin:22px 0 17px}.companions-intro>p{font-size:15px;max-width:none;margin-bottom:19px}.companion-portrait{aspect-ratio:4/4.6}.companion-cards{gap:10px}.companion-meta{padding:13px 9px 15px}.companion-meta h3{font-size:clamp(19px,3.2vw,26px)}.companion-meta p{font-size:10px}.kickstar-escort{max-width:none}}
+@media(max-width:520px){.companions-layout{gap:23px}.companions .section-title{font-size:clamp(35px,8.9vw,45px)}.companions-intro>p{font-size:14px}.companion-cards{grid-template-columns:1fr;gap:9px}.companion-card{display:grid;grid-template-columns:116px minmax(0,1fr);min-height:136px}.companion-portrait{width:100%;height:100%;min-height:136px;aspect-ratio:auto}.companion-portrait img{object-position:50% 25%}.companion-card:nth-child(2) .companion-portrait img{object-position:50% 52%}.companion-meta{display:flex;flex-direction:column;justify-content:center;padding:14px 17px}.companion-role{font-size:9px;letter-spacing:.08em}.companion-meta h3{font-size:27px;margin:8px 0}.companion-meta p{font-size:12px}.companion-index{top:9px;left:9px;width:25px;height:25px;font-size:10px}.kickstar-escort{padding:15px 14px;gap:12px}.kickstar-escort h3{font-size:15px}.brand-type .brand-ko{gap:5px}.brand-type .flag-header{width:16px;height:11px}.camp-identity-kicker{gap:7px}}
+@media(max-width:355px){.companion-card{grid-template-columns:99px minmax(0,1fr);min-height:125px}.companion-portrait{min-height:125px}.companion-meta h3{font-size:24px}.companion-meta p{font-size:11px}.brand-type .flag-header{width:14px;height:10px}}
+@media(prefers-reduced-motion:reduce){.companion-portrait img{transition:none}.companion-card:hover img{transform:none}}
+
+
+/* V12: Why Real Betis typography-only readability update */
+/* Deliberately scoped to the red section; other site sections stay untouched. */
+.betis-proof-chapter {font-size:14px;letter-spacing:.13em}
+.betis-proof .eyebrow {font-size:13px}
+.betis-proof-lead {font-size:clamp(18px,1.55vw,22px);line-height:1.75}
+.betis-rank {min-height:222px}
+.betis-rank>span {font-size:clamp(14px,1.15vw,17px);line-height:1.5}
+.betis-rank p {font-size:clamp(14px,1.1vw,16px);line-height:1.55}
+.betis-proof-image figcaption {font-size:14px;letter-spacing:.075em}
+.betis-proof-photo-tag {font-size:12px;letter-spacing:.08em}
+.betis-proof-flag {font-size:13px;letter-spacing:.11em}
+.betis-proof-youth h3 {font-size:clamp(29px,2.7vw,38px)}
+.betis-youth-score span {font-size:15px;line-height:1.5}
+.betis-youth-score b {font-size:clamp(24px,2vw,30px);line-height:1.38}
+.betis-youth-score small {font-size:14px;line-height:1.5}
+.betis-proof-youth>p {font-size:17px;line-height:1.7}
+.betis-proof-links {font-size:14px;line-height:1.75;gap:7px 15px}
+.betis-proof-footer>p {font-size:13px;line-height:1.7}
+.betis-proof-next span {font-size:12px;letter-spacing:.10em}
+.betis-proof-next strong {font-size:clamp(20px,1.85vw,26px)}
+.betis-proof-next a,.betis-proof-next a span {font-size:15px}
+@media (max-width:780px) {
+  .betis-proof-ranks {align-items:stretch}
+  .betis-proof-main {min-height:0}
+}
+@media (max-width:520px) {
+  .betis-proof-chapter {font-size:11px;letter-spacing:.07em}
+  .betis-proof-chapter span:last-child {font-size:10px}
+  .betis-proof .eyebrow {font-size:11px}
+  .betis-proof-lead {font-size:16px;line-height:1.7}
+  .betis-rank {min-height:188px;padding:16px 13px}
+  .betis-rank>span {font-size:12.5px;line-height:1.4}
+  .betis-rank p {font-size:12.5px;line-height:1.48}
+  .betis-proof-image figcaption {font-size:12px}
+  .betis-proof-photo-tag {font-size:10px}
+  .betis-proof-flag {font-size:12px}
+  .betis-proof-youth h3 {font-size:29px}
+  .betis-youth-score {padding:19px 0}
+  .betis-youth-score span {font-size:13px}
+  .betis-youth-score b {font-size:22px;line-height:1.35}
+  .betis-youth-score small {font-size:13px}
+  .betis-proof-youth>p {font-size:15px;line-height:1.7}
+  .betis-proof-links {font-size:13px;gap:8px 12px}
+  .betis-proof-footer>p {font-size:12.5px}
+  .betis-proof-next span {font-size:11px}
+  .betis-proof-next strong {font-size:20px}
+  .betis-proof-next a,.betis-proof-next a span {font-size:14px}
+}
+@media (max-width:350px) {
+  .betis-rank {min-height:207px}
+  .betis-rank strong {font-size:clamp(49px,16vw,59px)}
+  .betis-rank>span {font-size:12px}
+  .betis-rank p {font-size:12px}
+}
+
+
+/* ============================
+   v13 / SPAIN FABRIC + BETIS COMPETITIONS
+   Scoped only to Spain banner and Why Betis.
+   ============================ */
+.spain-banner {
+  min-height: min(720px, 84vh);
+  isolation: isolate;
+  background:#043b2e;
+}
+.spain-banner>img.spain-flag-background {
+  position:absolute; inset:0; width:100%;height:100%;
+  object-fit:cover;object-position:center 48%;
+  opacity:.76;
+  filter:saturate(.93) contrast(1.06) blur(.4px);
+  transform:scale(1.025);
+  animation:flag-drift 13s ease-in-out infinite alternate;
+}
+.spain-banner:after {
+  content:"";z-index:0;position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(0,49,36,.95) 0%,rgba(0,58,40,.89) 34%,rgba(0,59,41,.73) 58%,rgba(0,56,39,.42) 100%),linear-gradient(0deg,rgba(0,40,30,.24),transparent 42%);
+}
+.spain-banner .spain-layout {z-index:2;position:relative;padding:106px 0 100px}
+.spain-banner .spain-layout h2 {text-shadow:0 3px 25px rgba(0,23,16,.18)}
+.spain-banner .spain-layout>p {text-shadow:0 1px 10px rgba(0,22,15,.35)}
+@keyframes flag-drift {from{transform:scale(1.025) translateX(-.7%)}to{transform:scale(1.055) translateX(.7%)}}
+@media(prefers-reduced-motion:reduce){.spain-banner>img.spain-flag-background {animation:none}}
+@media(max-width:780px){
+  .spain-banner {min-height:550px}
+  .spain-banner .spain-layout {padding:89px 0 80px}
+  .spain-banner>img.spain-flag-background {object-position:58% 50%;opacity:.7}
+  .spain-banner:after{background:linear-gradient(90deg,rgba(0,51,38,.93),rgba(0,50,39,.73)),linear-gradient(0deg,rgba(0,35,26,.3),transparent)}
+}
+@media(max-width:520px){
+  .spain-banner {min-height:510px}
+  .spain-banner .spain-layout{padding:84px 0 72px}
+  .spain-banner>img.spain-flag-background{object-position:62% center;opacity:.67}
+}
+/* Why Betis: competition names are the heroes, detailed numbers the supporting proof. */
+.betis-proof .betis-proof-intro {display:block}
+.betis-proof .betis-one-line-title {
+  white-space:nowrap;
+  font-size:clamp(44px,5.4vw,78px);
+  line-height:1.15;
+  letter-spacing:-.074em;
+  margin:18px 0 24px;
+  max-width:none;
+}
+.betis-proof-lead{max-width:900px}
+.betis-competition-grid{
+  margin-top:39px;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+}
+.betis-competition-card{
+  display:flex;flex-direction:column;justify-content:space-between;
+  min-width:0;min-height:219px;
+  border:1px solid rgba(255,233,213,.31);
+  background:linear-gradient(155deg,rgba(74,8,30,.65),rgba(113,17,38,.31));
+  padding:24px 21px 21px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
+}
+.betis-comp-kicker{
+  font-size:11px;letter-spacing:.14em;
+  font-weight:750;color:#ffc89a;display:block;
+}
+.betis-competition-card h3{
+  margin:19px 0 18px;
+  font-size:clamp(20px,1.92vw,29px);
+  letter-spacing:-.055em;
+  line-height:1.27;
+  font-weight:740;
+  color:#fff8ee;
+  overflow-wrap:break-word;
+}
+.betis-competition-card h3 strong{
+  display:inline-block;color:#ffdab1;font-size:1.13em;
+  font-weight:900;letter-spacing:-.07em;
+}
+.betis-comp-achievement{
+  border-top:1px solid rgba(255,230,217,.21);
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  padding-top:15px;
+}
+.betis-comp-achievement b{
+  font-size:clamp(25px,2.55vw,37px);
+  font-weight:900;line-height:1.05;
+  color:#fff;
+}
+.betis-comp-achievement small{font-size:11px;line-height:1.45;color:#f7c5b7}
+.betis-proof .betis-proof-main{margin-top:20px}
+.betis-youth-score .betis-cup-name{
+  display:block;font-size:clamp(24px,2.3vw,34px);
+  font-weight:900;letter-spacing:-.055em;line-height:1.22;
+  color:#ffe0bf;
+}
+.betis-youth-score>span{font-size:14px}
+.betis-youth-score b {font-size:clamp(20px,1.7vw,26px)}
+@media(max-width:1100px){
+  .betis-competition-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .betis-competition-card{min-height:175px}
+  .betis-proof .betis-one-line-title{font-size:clamp(40px,5.2vw,64px)}
+}
+@media(max-width:780px){
+  .betis-proof .betis-one-line-title{font-size:clamp(28px,6.8vw,43px)}
+  .betis-competition-grid{gap:9px;margin-top:27px}
+  .betis-competition-card{padding:19px 15px;min-height:172px}
+  .betis-comp-kicker{font-size:9px;letter-spacing:.09em}
+  .betis-competition-card h3{font-size:clamp(17px,4.2vw,25px);margin:12px 0 14px}
+  .betis-comp-achievement b{font-size:27px}
+  .betis-comp-achievement small{font-size:10px}
+  .betis-youth-score .betis-cup-name{font-size:clamp(23px,5.1vw,30px)}
+}
+@media(max-width:365px){
+  .betis-proof .betis-one-line-title{font-size:clamp(25px,7.2vw,28px);letter-spacing:-.085em}
+  .betis-competition-card{padding:16px 12px;min-height:168px}
+  .betis-competition-card h3{font-size:17px}
+  .betis-comp-achievement small{font-size:9px}
+}
+
+/* Fine-tune: keep red and gold Spanish flag folds visible under the green readability veil. */
+.spain-banner>img.spain-flag-background {opacity:.95;filter:saturate(1.05) contrast(1.06) blur(.35px)}
+.spain-banner:after{background:linear-gradient(90deg,rgba(0,43,33,.91),rgba(0,45,33,.66) 42%,rgba(0,41,30,.32) 100%)}
+@media(max-width:780px){
+.spain-banner>img.spain-flag-background{opacity:.98}
+.spain-banner:after{background:linear-gradient(90deg,rgba(0,48,35,.83),rgba(0,50,36,.58) 62%,rgba(0,47,34,.38) 100%)}
+}
+
+/* v14: photographic Spanish flag folds and official crest, from approved design reference.
+   Keep forest shade left for the existing white/lime text; retain vivid flag at right. */
+.spain-banner{isolation:isolate;background:#003c2d;overflow:hidden}
+.spain-banner>img.spain-flag-background{
+  object-fit:cover;
+  object-position:74% 50%;
+  opacity:1;
+  filter:saturate(1.13) contrast(1.055);
+  transform:scale(1.018);
+  animation:flag-drift 16s ease-in-out infinite alternate;
+}
+.spain-banner::after{
+  background:linear-gradient(90deg,rgba(0,49,36,.93) 0%,rgba(0,52,37,.80) 32%,rgba(0,43,32,.40) 57%,rgba(0,32,27,.18) 100%);
+}
+@media(max-width:780px){
+ .spain-banner>img.spain-flag-background{object-position:74% center;opacity:1}
+ .spain-banner::after{background:linear-gradient(90deg,rgba(0,48,35,.84),rgba(0,50,36,.54) 60%,rgba(0,41,32,.31))}
+}
+@media(max-width:520px){
+ .spain-banner>img.spain-flag-background{object-position:74% center;opacity:1}
+ .spain-banner::after{background:linear-gradient(90deg,rgba(0,47,34,.86),rgba(0,47,33,.67) 68%,rgba(0,37,28,.46))}
+}
+@media(max-width:360px){
+ .spain-layout h2{font-size:clamp(38px,12vw,42px);letter-spacing:-.08em;line-height:1.22}
+ .spain-layout>p{font-size:14px;line-height:1.65}
+}
+/* The schedule is authored in HTML as well as filled by optional JavaScript.
+   This prevents an empty schedule on first paint or with JS disabled. */
+#schedule-list:empty{min-height:0}
+
+
+/* V15 | Final companion and capacity refinements */
+.kickstar-escort{
+  background:#e8f4d7;
+  border:1px solid #b9df9e;
+  box-shadow:0 14px 34px rgba(0,18,11,.13);
+}
+.kickstar-escort .escort-icon{background:#18784d;color:#fff}
+.kickstar-escort .escort-kicker{color:#287e52}
+.kickstar-escort h3{color:#123c2c}
+.kickstar-escort p{color:#4c6857}
+/* The third source is a much closer facial crop than the Shin Se-gye source. */
+.companion-card:nth-child(3) .companion-portrait{background:#fff}
+.companion-card:nth-child(3) .companion-portrait img{
+  object-fit:contain;
+  object-position:50% 50%;
+  transform:scale(.77);
+  transform-origin:50% 52%;
+}
+.companion-card:nth-child(3):hover .companion-portrait img{transform:scale(.79)}
+.capacity-count>.capacity-primary{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;min-width:0}
+.capacity-current-value{display:inline-flex;align-items:baseline;gap:5px;white-space:nowrap}
+.capacity-count .capacity-label{white-space:nowrap}
+.capacity-count .capacity-now{color:#436655;font-weight:750;font-size:13px;letter-spacing:-.015em}
+@media(max-width:520px){
+  .capacity-count>.capacity-primary{gap:5px 9px}
+  .capacity-count .capacity-now{font-size:12px}
+  .companion-card:nth-child(3) .companion-portrait img{object-position:50% 50%;transform:scale(.76)}
+  .companion-card:nth-child(3):hover .companion-portrait img{transform:scale(.76)}
+}
+
+
+/* V16 — HERO FACT PANEL / UEFA A EXPLAINER / STAY HIGHLIGHTS */
+.hero-media-card{left:20px;right:20px;bottom:22px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch;z-index:2}
+.hero-media-card .hero-proof-cell{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:18px 18px 17px;background:rgba(4,35,27,.79);border:1px solid rgba(206,248,180,.34);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 3px 0 rgba(209,249,123,.82)}
+.hero-media-card .hero-proof-cell:nth-child(2){background:rgba(9,68,46,.8)}
+.hero-media-card .hero-proof-kicker{margin:0;color:#d5fb8e;font-size:10px;font-weight:850;letter-spacing:.15em}
+.hero-media-card .hero-proof-cell b{display:block;white-space:nowrap;font-weight:850;font-size:clamp(46px,5.3vw,76px);line-height:1;letter-spacing:-.075em;color:#fff}
+.hero-media-card .hero-proof-cell b small{display:inline-block;color:#d8f7bc;font-size:clamp(9px,.8vw,13px);letter-spacing:.07em;font-weight:700;margin-left:8px}
+.hero-media-card .hero-proof-description{color:#e6f3e2;font-size:13px;margin:0;line-height:1.48;letter-spacing:-.025em}
+.spec-bar{background:#e4ecde;padding:38px 0 43px}
+.spec-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin:0 0 19px}
+.spec-heading-eyebrow{display:block;color:#2f7c50;font-weight:850;letter-spacing:.16em;font-size:11px;margin-bottom:10px}
+.spec-heading h2{font-size:clamp(23px,2.7vw,35px);line-height:1.25;letter-spacing:-.064em;color:#123e2b;margin:0}
+.spec-heading h2 em{font-style:normal;color:#188252}
+.spec-heading p{font-size:13px;color:#4d705c;max-width:260px;line-height:1.55;margin:0}
+.spec-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:0}
+.spec-row .spec-card{border:1px solid #c6d8bd;border-left:1px solid #c6d8bd;display:flex;flex-direction:column;min-width:0;padding:20px 18px 19px;background:#fbfff3;min-height:201px;position:relative;overflow:hidden}
+.spec-row .spec-card:nth-child(2){background:#d5f29c;border-color:#c7e68e}
+.spec-row .spec-card:nth-child(3){background:#0e5036;border-color:#0e5036}
+.spec-row .spec-card:nth-child(4){background:#f5f8f0}
+.spec-card-index{display:block;position:relative;color:#438760;font-weight:800;font-size:10px;letter-spacing:.11em;line-height:1.5;margin-bottom:13px}
+.spec-row .spec-card b{display:block;color:#104f36;font-weight:850;letter-spacing:-.075em;line-height:1.08;font-size:clamp(39px,4vw,57px)}
+.spec-row .spec-card b span{font-size:19px;margin-left:4px;letter-spacing:-.01em}
+.spec-row .spec-card:nth-child(3) b{font-size:clamp(31px,3vw,47px);letter-spacing:-.075em;color:#d8fa91}
+.spec-row .spec-card p{font-size:14px;font-weight:760;color:#244937;margin:12px 0 8px;line-height:1.4;letter-spacing:-.04em}
+.spec-row .spec-card small{font-size:11px;color:#6b8470;margin-top:auto;line-height:1.4}
+.spec-row .spec-card:nth-child(3) :is(.spec-card-index,.spec-card p){color:#e0f8d0}
+.spec-row .spec-card:nth-child(3) small{color:#b8d6c1}
+.feature-text{background:#dcf49c}
+.feature-coach-punch{width:fit-content;display:inline-block;padding:6px 10px;background:#0b4d33;color:#e1ffa4;font-weight:850;font-size:12px;letter-spacing:-.015em;line-height:1.45;margin:0 0 12px}
+.feature-text h3{font-size:21px}
+.feature-text p{font-size:12.5px;line-height:1.5}
+.uefa-credential{background:linear-gradient(118deg,#083c2d 0%,#0c5b41 63%,#145943 100%);color:#fff;margin-top:17px;padding:36px 38px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:30px;align-items:center;border:1px solid rgba(60,145,108,.35);position:relative;overflow:hidden}
+.uefa-credential:before{content:'A';position:absolute;right:28%;top:-110px;font-size:430px;font-weight:900;line-height:1;color:rgba(255,255,255,.025);pointer-events:none}
+.uefa-credential-head,.uefa-credential-facts{position:relative;z-index:1}
+.uefa-credential-kicker{display:block;color:#d9ff97;font-size:11px;letter-spacing:.16em;font-weight:850;margin-bottom:13px}
+.uefa-credential-head h3{font-size:clamp(26px,2.3vw,36px);letter-spacing:-.07em;line-height:1.3;margin:0 0 14px}
+.uefa-credential-head h3 em{font-style:normal;color:#d3f982}
+.uefa-credential-head p{margin:0 0 14px;color:#d7e8dd;font-size:14px;line-height:1.7;max-width:590px}
+.uefa-credential-head p strong{color:#fff}
+.uefa-credential-link{color:#ddfc9b;font-weight:750;font-size:12px;text-underline-offset:4px;text-decoration:underline}
+.uefa-credential-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.uefa-credential-fact{display:flex;flex-direction:column;min-height:170px;justify-content:space-between;gap:16px;padding:20px 12px;background:rgba(0,25,18,.37);border:1px solid rgba(214,255,164,.23)}
+.uefa-credential-fact strong{color:#d6ff82;font-size:clamp(27px,3vw,45px);letter-spacing:-.075em;line-height:1.1;white-space:nowrap}
+.uefa-credential-fact strong span{font-size:13px;margin-left:3px;letter-spacing:-.03em}
+.uefa-credential-fact>span{color:#e3efe4;font-size:12px;line-height:1.55;letter-spacing:-.028em}
+.stay-list p{font-size:14.5px;line-height:1.9}
+.stay-highlight{background:#e3f17b;color:#173e2b;border-radius:2px;padding:2px 6px 3px;font-weight:850;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.spain-graphic-only{display:inline-flex;pointer-events:none!important;cursor:default!important;user-select:none;transform:none!important;box-shadow:none!important}
+.spain-graphic-only:hover{background:#fff;transform:none!important}
+@media(max-width:1100px){
+  .spec-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec-row .spec-card{min-height:180px}
+  .uefa-credential{grid-template-columns:1fr;gap:28px}
+  .feature-coach-punch{font-size:11px;padding:4px 7px;margin-bottom:8px}
+  .feature-text h3{font-size:20px}
+}
+@media(max-width:780px){
+  .hero-media-card{left:12px;right:12px;bottom:15px;gap:8px}
+  .hero-media-card .hero-proof-cell{padding:14px 11px 13px;gap:6px}
+  .hero-media-card .hero-proof-cell b{font-size:clamp(43px,9vw,66px)}
+  .hero-media-card .hero-proof-cell b small{font-size:10px;margin-left:5px}
+  .hero-media-card .hero-proof-description{font-size:11px}
+  .spec-bar{padding:28px 0 32px}
+  .spec-heading{display:block}
+  .spec-heading p{margin-top:8px;max-width:100%;font-size:12px}
+  .spec-row{gap:8px}
+  .spec-row .spec-card{padding:15px 13px;min-height:169px!important;border:1px solid #c6d8bd!important}
+  .spec-row .spec-card:nth-child(3){border-color:#0e5036!important}
+  .spec-row .spec-card b{font-size:clamp(39px,9vw,57px)}
+  .spec-row .spec-card:nth-child(3) b{font-size:clamp(30px,7.4vw,43px)}
+  .spec-row .spec-card b span{font-size:16px}
+  .spec-row .spec-card p{font-size:12px;margin:12px 0 7px}
+  .spec-row .spec-card small{font-size:10px}
+  .spec-card-index{font-size:9px}
+  .uefa-credential{padding:28px 23px;gap:23px}
+  .uefa-credential-head h3{font-size:29px}
+  .uefa-credential-head p{font-size:13.5px}
+  .uefa-credential-fact{min-height:135px}
+  .uefa-credential-fact strong{font-size:clamp(30px,5vw,45px)}
+  .stay-list p{font-size:14px}
+}
+@media(max-width:520px){
+  .spec-heading h2{font-size:25px}
+  .hero-media-card .hero-proof-kicker{font-size:9px;letter-spacing:.08em}
+  .hero-media-card .hero-proof-cell b{font-size:42px}
+  .hero-media-card .hero-proof-cell b small{display:block;font-size:10px;letter-spacing:.07em;margin:0 0 0 2px}
+  .hero-media-card .hero-proof-description{font-size:10px;line-height:1.5}
+  .uefa-credential{padding:25px 19px}
+  .uefa-credential-head h3{font-size:clamp(25px,7vw,32px)}
+  .uefa-credential-facts{gap:6px}
+  .uefa-credential-fact{padding:13px 9px;min-height:132px}
+  .uefa-credential-fact strong{font-size:clamp(27px,7.2vw,35px)}
+  .uefa-credential-fact strong span{font-size:11px}
+  .uefa-credential-fact>span{font-size:10px}
+}
+@media(max-width:350px){
+  .hero-media-card .hero-proof-cell{padding:10px 8px}
+  .spec-row .spec-card{padding:14px 10px;min-height:172px!important}
+  .spec-card-index{font-size:8px}
+  .spec-row .spec-card p{font-size:11px}
+  .spec-row .spec-card small{font-size:9px}
+  .uefa-credential-facts{grid-template-columns:1fr;gap:6px}
+  .uefa-credential-fact{min-height:0;display:grid;grid-template-columns:105px 1fr;align-items:center;gap:8px;padding:12px 13px}
+  .uefa-credential-fact strong{font-size:34px}
+  .uefa-credential-fact>span{font-size:11px}
+}
+
+
+/* V17 | Camp highlights, youth achievements divider, escort alignment */
+.spec-row .spec-card-ucl{background:linear-gradient(145deg,#f5faeb 0%,#eaf4db 100%);border-color:#c0d6b7}
+.spec-row .spec-card-ucl .spec-ucl-mark{display:flex;align-items:baseline;gap:7px;font-size:clamp(38px,3.8vw,54px);line-height:1.1;letter-spacing:-.068em;color:#145c3e}
+.spec-row .spec-card-ucl .spec-ucl-mark span{font-size:13px;letter-spacing:.09em;margin:0;background:#c9ef9b;color:#145c3e;border-radius:2px;padding:5px 6px;line-height:1.1;font-weight:900}
+.spec-row .spec-card-ucl p{font-weight:900;font-size:clamp(14px,1.25vw,17px);line-height:1.38;margin-top:12px;color:#174931}
+.spec-row .spec-card-ucl small{font-size:clamp(11px,1vw,13px);color:#3f6650;font-weight:780}
+.spec-ucl-versus{font-size:.85em;color:#57906a;margin:0 2px;font-weight:600}
+.betis-proof-youth .betis-youth-divider{height:1px;width:100%;margin:22px 0 3px;background:linear-gradient(90deg,rgba(255,226,200,.7),rgba(255,226,200,.20))}
+.betis-proof-youth h3{margin-bottom:0}
+.betis-proof-youth .betis-youth-divider+.betis-youth-score{padding-top:21px}
+/* Icon tracks exactly the English+Korean two-line heading; description occupies the full text column. */
+.kickstar-escort{display:grid;grid-template-columns:40px minmax(0,1fr);grid-template-areas:'icon heading' '. description';column-gap:12px;row-gap:6px;align-items:start;padding:16px 17px 15px;max-width:445px}
+.kickstar-escort .escort-icon{grid-area:icon;width:40px;height:40px;align-self:center}
+.kickstar-escort .escort-icon svg{width:22px;height:22px}
+.kickstar-escort .escort-heading{grid-area:heading;min-width:0;align-self:center}
+.kickstar-escort .escort-kicker{font-size:9px;line-height:1.25;margin-bottom:5px;letter-spacing:.10em}
+.kickstar-escort .escort-heading h3{font-size:clamp(13px,1.05vw,15px);line-height:1.32;letter-spacing:-.047em;margin:0;font-weight:850;text-wrap:pretty}
+.kickstar-escort .escort-description{grid-area:description;margin:0;font-size:11.4px;line-height:1.58;letter-spacing:-.034em}
+@media(max-width:780px){
+  .spec-row .spec-card-ucl .spec-ucl-mark{font-size:clamp(32px,8.5vw,45px)}
+  .spec-row .spec-card-ucl .spec-ucl-mark span{font-size:9px;padding:4px 5px}
+  .spec-row .spec-card-ucl p{font-size:clamp(12px,3.4vw,15px);margin:9px 0 6px}
+  .spec-row .spec-card-ucl small{font-size:11px}
+  .kickstar-escort .escort-heading h3{font-size:14px}
+}
+@media(max-width:370px){
+  .spec-row .spec-card-ucl .spec-ucl-mark{font-size:32px}
+  .spec-row .spec-card-ucl .spec-ucl-mark span{font-size:8px}
+  .spec-row .spec-card-ucl p{font-size:11.8px}
+  .spec-row .spec-card-ucl small{font-size:10px}
+  .kickstar-escort{grid-template-columns:36px minmax(0,1fr);column-gap:9px;padding:13px 11px}
+  .kickstar-escort .escort-icon{width:36px;height:36px}
+  .kickstar-escort .escort-heading h3{font-size:13px}
+  .kickstar-escort .escort-kicker{font-size:8.5px;letter-spacing:.08em}
+}
+
+
+/* V18 - Remove duplicated teaser rows and consolidate the numbers with the
+   existing academy training photo. All registration / comment hooks remain. */
+.hero-grid {align-items:stretch;gap:clamp(18px,2vw,30px)}
+.hero-copy {padding-bottom:clamp(30px,3.6vw,48px)}
+.hero-copy .hero-capacity {margin-top:18px}
+.hero-media {min-height:790px;height:auto;margin-top:18px;margin-bottom:18px;isolation:isolate}
+.hero-media picture {position:absolute;inset:0;z-index:0}
+.hero-media picture img {height:100%;width:100%;object-fit:cover;object-position:46% center}
+.hero-media:before {z-index:1;background:linear-gradient(180deg,rgba(4,35,24,.06) 0%,rgba(4,35,24,.16) 22%,rgba(4,35,24,.84) 52%,rgba(2,30,22,.98) 100%)}
+.hero-photo-label {top:21px;right:18px;font-size:9px;letter-spacing:.09em}
+.hero-program {position:absolute;bottom:19px;left:18px;right:18px;z-index:2;display:flex;flex-direction:column;gap:18px}
+.hero-program-head span {display:block;font-size:10px;font-weight:850;letter-spacing:.14em;color:#d7f6b6;margin:0 0 7px}
+.hero-program-head h2 {font-size:clamp(26px,2.6vw,38px);font-weight:850;line-height:1.2;letter-spacing:-.07em;margin:0 0 7px;color:#fff;text-wrap:balance}
+.hero-program-head h2 em {color:#d6fa86}
+.hero-program-head p {font-size:12px;line-height:1.5;color:#cee5d2;margin:0}
+.hero-program-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.hero-program-card {min-height:176px;min-width:0;padding:16px 14px 15px;display:flex;flex-direction:column;align-items:flex-start;background:rgba(9,57,39,.82);color:#fff;border:1px solid rgba(193,241,180,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:inset 0 3px 0 #d1f879}
+.hero-program-card:nth-child(2) {background:rgba(14,91,57,.85)}
+.hero-program-card-coach {background:rgba(9,43,34,.95)}
+.hero-program-card-ucl {background:rgba(239,250,218,.97);color:#0b4731;border-color:#e2f5c9;box-shadow:inset 0 3px 0 #b7e858}
+.hero-program-label {font-size:9.5px;letter-spacing:.07em;font-weight:850;line-height:1.4;color:#d5f4b3;min-height:26px}
+.hero-program-card-ucl .hero-program-label {color:#377b52}
+.hero-program-card>strong {font-size:clamp(46px,4.5vw,68px);line-height:1.02;letter-spacing:-.075em;margin:0 0 10px;white-space:nowrap;color:#e6ffb9;font-weight:850}
+.hero-program-card>strong small {font-size:18px;margin-left:3px;letter-spacing:-.02em;color:inherit}
+.hero-program-card-coach>strong {font-size:clamp(32px,3.15vw,48px);margin-top:7px;margin-bottom:18px}
+.hero-program-card-ucl>strong {color:#165e3d;font-size:clamp(36px,3.9vw,55px)}
+.hero-program-card-ucl>strong small {font-size:10px;letter-spacing:.07em;color:#134e32;background:#c8ed97;padding:5px 6px;margin-left:6px;vertical-align:middle}
+.hero-program-card>b {font-size:12.4px;font-weight:850;line-height:1.4;letter-spacing:-.04em;color:inherit;margin-top:auto}
+.hero-program-card>.hero-program-note {font-size:10.5px;line-height:1.45;color:#d0e8d2;margin-top:5px}
+.hero-program-card-ucl>.hero-program-note {color:#426d52}
+/* Reduce the tall information box: full-width escort description starts at
+   the icon's left edge instead of inheriting the heading's inset. */
+.kickstar-escort {max-width:unset;width:100%;grid-template-columns:40px minmax(0,1fr);grid-template-areas:'icon heading' 'description description';column-gap:12px;row-gap:10px;padding:15px 16px 14px}
+.kickstar-escort .escort-icon {align-self:center}
+.kickstar-escort .escort-heading {align-self:center}
+.kickstar-escort .escort-description {grid-column:1 / -1;line-height:1.48;font-size:11.1px;letter-spacing:-.055em;white-space:nowrap}
+
+@media(max-width:1130px) and (min-width:781px){
+  .hero-media {min-height:720px}
+  .hero-program {left:12px;right:12px;bottom:13px;gap:12px}
+  .hero-program-card {min-height:155px;padding:12px 10px}
+  .hero-program-card>strong {font-size:clamp(41px,4vw,54px)}
+  .hero-program-card-coach>strong {font-size:clamp(29px,3vw,39px)}
+  .hero-program-card>b {font-size:11.2px}
+  .hero-program-card>.hero-program-note {font-size:9.5px}
+  .hero-program-head h2 {font-size:27px}
+  .kickstar-escort .escort-description {white-space:normal}
+}
+@media(max-width:780px){
+  .hero-media {height:620px;min-height:620px;margin:0 0 14px}
+  .hero-media picture img {object-position:50% center}
+  .hero-program {left:13px;right:13px;bottom:14px;gap:14px}
+  .hero-program-head h2 {font-size:clamp(25px,5vw,34px)}
+  .hero-program-card {min-height:166px;padding:15px 13px}
+  .hero-program-card>strong {font-size:clamp(44px,7vw,60px)}
+  .hero-program-card-coach>strong {font-size:clamp(31px,5vw,44px)}
+  .kickstar-escort .escort-description {white-space:normal}
+}
+@media(max-width:520px){
+  .hero-copy {padding-bottom:22px}
+  .hero-media {height:568px;min-height:568px;margin-bottom:0}
+  .hero-photo-label {top:12px;right:12px;font-size:7.5px}
+  .hero-program {bottom:11px;left:10px;right:10px;gap:11px}
+  .hero-program-head span {font-size:8px;margin-bottom:5px}
+  .hero-program-head h2 {font-size:clamp(21px,6vw,27px);margin-bottom:5px;line-height:1.2}
+  .hero-program-head p {font-size:11px}
+  .hero-program-grid {gap:7px}
+  .hero-program-card {min-height:158px;padding:11px 9px 10px}
+  .hero-program-label {font-size:8px;min-height:25px;letter-spacing:.03em}
+  .hero-program-card>strong {font-size:clamp(43px,11.8vw,55px);margin-bottom:8px}
+  .hero-program-card>strong small {font-size:14px}
+  .hero-program-card-coach>strong {font-size:clamp(28px,7.5vw,37px);margin-top:5px;margin-bottom:8px}
+  .hero-program-card-ucl>strong {font-size:clamp(31px,8.7vw,45px)}
+  .hero-program-card-ucl>strong small {font-size:8px;padding:4px;margin-left:4px}
+  .hero-program-card>b {font-size:11px}
+  .hero-program-card>.hero-program-note {font-size:9.2px;line-height:1.3}
+  .kickstar-escort {padding:13px 13px 12px;row-gap:9px}
+  .kickstar-escort .escort-description {font-size:11px;white-space:normal;line-height:1.5}
+}
+@media(max-width:350px){
+  .hero-media {height:564px;min-height:564px}
+  .hero-program-card {min-height:160px;padding:10px 8px}
+  .hero-program-label {font-size:7.3px}
+  .hero-program-card>b {font-size:10.2px}
+  .hero-program-card>.hero-program-note {font-size:8.7px}
+  .hero-program-card-coach>strong {font-size:27px}
+  .hero-program-card-ucl>strong {font-size:30px}
+}
