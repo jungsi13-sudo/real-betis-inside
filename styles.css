@@ -1135,3 +1135,330 @@
   .hero-program-card-coach>strong {font-size:27px}
   .hero-program-card-ucl>strong {font-size:30px}
 }
+
+
+/* === HERO SIMPLIFICATION · 2026-11-06 ===
+   One cream masthead, no duplicate dark brand strip, no box border.
+   The existing navigation toggle, booking buttons and data bindings remain unchanged. */
+.camp-masthead{
+  position:relative;
+  isolation:isolate;
+  z-index:70;
+  width:100%;
+  background:#f0f5e8;
+  color:#123a2a;
+  border:0;
+  box-shadow:none;
+}
+.camp-masthead-inner{
+  position:relative;
+  padding:clamp(24px,3.3vw,45px) 0 clamp(25px,3vw,40px);
+}
+.camp-masthead .camp-identity{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  width:100%;
+  max-width:none;
+  padding:0;
+  margin:0;
+  border:0;
+  border-left:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.camp-masthead .camp-identity::before{display:none!important;content:none!important}
+.camp-masthead .camp-identity-top{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:clamp(14px,2.2vw,27px);
+}
+.camp-masthead .camp-identity-kicker{
+  display:inline-flex;
+  flex-wrap:wrap;
+  align-items:center;
+  min-width:0;
+  gap:9px;
+  font-size:clamp(10px,1vw,13px);
+  font-weight:780;
+  line-height:1.5;
+  letter-spacing:.085em;
+  color:#507762;
+}
+.camp-masthead .camp-identity-kicker .flag-identity{
+  flex:none;
+  width:27px;
+  height:18px;
+}
+.camp-masthead .nav-toggle{
+  flex:none;
+  display:inline-flex!important;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:49px;
+  height:47px;
+  padding:8px;
+  margin:0;
+  border:1px solid #c8d7c3;
+  border-radius:5px;
+  background:#e0ebd7;
+  color:#153d2b;
+  transition:background .18s ease;
+}
+.camp-masthead .nav-toggle:hover{background:#d0e3c4}
+.camp-masthead .nav-toggle span{
+  display:block;
+  background:#173d2c;
+  width:21px;
+  height:2px;
+  border-radius:1px;
+  margin:3px 0;
+}
+.camp-masthead .camp-identity-en{
+  margin:0 0 8px;
+  font-size:clamp(36px,4.7vw,62px);
+  line-height:1.12;
+  font-weight:880;
+  letter-spacing:-.069em;
+  color:#113b2a;
+  text-wrap:balance;
+}
+.camp-masthead .camp-identity-en strong{color:#1f7a4a}
+.camp-masthead .camp-identity-ko{
+  margin:0 0 16px;
+  font-size:clamp(16px,1.68vw,22px);
+  line-height:1.3;
+  font-weight:760;
+  color:#4b6854;
+}
+.camp-masthead .camp-identity-date{
+  display:flex;
+  width:100%;
+  gap:7px 16px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:0;
+  padding:16px 0 0;
+  border:0;
+  border-top:1px solid #d1dfc8;
+  color:#55765e;
+  font-size:14px;
+}
+.camp-masthead .camp-identity-date strong{
+  color:#1a4932;
+  font-size:15px;
+  font-weight:850;
+}
+.camp-masthead .camp-identity-offer{
+  border:0;
+  border-top:1px solid #d1dfc8;
+  padding:17px 0 0;
+  margin:17px 0 0;
+  gap:10px 20px;
+}
+.camp-masthead .camp-offer-tag{font-size:13px}
+.camp-masthead .camp-offer-amount del{font-size:20px}
+.camp-masthead .camp-offer-amount strong{font-size:clamp(26px,2.6vw,35px)}
+.camp-masthead .mobile-menu{
+  position:absolute;
+  left:0;
+  top:100%;
+  width:100%;
+  z-index:75;
+  border-radius:0 0 6px 6px;
+  padding:15px 22px 22px;
+  background:#123a2c;
+  color:#fff;
+  box-shadow:0 16px 30px rgba(4,28,18,.24);
+}
+/* Remove the top gap that used to separate the dark header/identity from the hook. */
+.hero .hero-hook-label{margin-top:0}
+.hero .hero-copy{padding-top:clamp(54px,6vw,85px)}
+@media(max-width:780px){
+  .camp-masthead-inner{padding:22px 0 25px}
+  .camp-masthead .camp-identity-top{margin-bottom:19px}
+  .camp-masthead .camp-identity-en{font-size:clamp(30px,6.7vw,47px)}
+  .camp-masthead .camp-identity-ko{font-size:17px;margin-bottom:15px}
+  .camp-masthead .camp-identity-date{padding-top:15px;font-size:12px}
+  .camp-masthead .camp-identity-date strong{font-size:13px}
+  .camp-masthead .camp-identity-offer{margin-top:15px;padding-top:15px}
+  .hero .hero-copy{padding-top:42px}
+}
+@media(max-width:520px){
+  .camp-masthead-inner{padding:18px 0 22px}
+  .camp-masthead .camp-identity-top{gap:8px;margin-bottom:19px}
+  .camp-masthead .camp-identity-kicker{font-size:9px;letter-spacing:.035em;gap:6px}
+  .camp-masthead .camp-identity-kicker .flag-identity{width:24px;height:16px}
+  .camp-masthead .nav-toggle{width:42px;height:42px}
+  .camp-masthead .nav-toggle span{width:19px}
+  .camp-masthead .camp-identity-en{font-size:clamp(27px,7vw,37px);line-height:1.16;margin-bottom:6px}
+  .camp-masthead .camp-identity-ko{font-size:15px;margin-bottom:15px}
+  .camp-masthead .camp-identity-date{padding-top:12px;font-size:11px;gap:4px 10px}
+  .camp-masthead .camp-identity-date strong{font-size:12px}
+  .camp-masthead .camp-identity-offer{margin-top:11px;padding-top:13px;gap:7px 12px}
+  .camp-masthead .camp-offer-tag{font-size:11px}
+  .camp-masthead .camp-offer-amount{gap:9px}
+  .camp-masthead .camp-offer-amount del{font-size:17px}
+  .camp-masthead .camp-offer-amount strong{font-size:clamp(24px,6.8vw,29px)}
+  .camp-masthead .mobile-menu{padding:12px 18px 20px}
+  .hero .hero-copy{padding-top:40px}
+}
+@media(max-width:355px){
+  .camp-masthead .camp-identity-kicker{font-size:8px}
+  .camp-masthead .camp-identity-en{font-size:26px}
+  .camp-masthead .camp-offer-amount del{font-size:16px}
+  .camp-masthead .camp-offer-amount strong{font-size:25px}
+}
+
+/* ===================================================================
+  FINAL CONTENT ORDER — hook → cream camp identity / conversion → 10-day proof
+  Designed to preserve every existing JS binding, including booking and count.
+   =================================================================== */
+.hook-intro{background:linear-gradient(120deg,#082b20 0%,#082b20 58%,#12543c 100%);position:relative;isolation:isolate}
+.hook-intro:after{content:"";position:absolute;inset:auto -12% -55% auto;width:65vw;height:65vw;max-width:850px;max-height:850px;border:1px solid rgba(198,243,172,.055);border-radius:50%;pointer-events:none}
+.hook-intro .hook-layout{display:flex;align-items:center;min-height:clamp(470px,42vw,620px);padding:clamp(72px,7vw,110px) 0 clamp(68px,6vw,95px);position:relative;z-index:1}
+.hook-intro .hero-copy{display:flex;flex-direction:column;align-items:flex-start;max-width:970px;min-height:0;width:100%;padding:0!important;margin:0}
+.hook-intro .hero-hook-label{margin:0 0 2px}
+.hook-intro h1{font-size:clamp(50px,6vw,87px);line-height:1.11;letter-spacing:-.074em;white-space:normal;margin:24px 0 27px}
+.hook-intro .hero-lead{font-size:clamp(17px,1.5vw,21px);margin:0 0 13px;max-width:730px}
+.hook-intro .hero-sub{margin:0;font-size:clamp(14px,1.28vw,17px);color:#bcd3c2}
+.hook-intro .hero-sub strong{color:#edfff2}
+/* Product identity and conversion actions share the same full-width cream hero. */
+.camp-masthead{background:#f0f5e8;position:relative;z-index:70}
+.camp-masthead .camp-masthead-inner{padding-top:clamp(31px,4vw,56px);padding-bottom:clamp(34px,4.4vw,61px)}
+.camp-masthead .camp-identity{width:100%;max-width:none}
+.camp-masthead .hero-ctas{margin-top:clamp(19px,2.5vw,30px);max-width:100%;gap:12px}
+.camp-masthead .hero-ctas>.button{display:flex;min-height:61px;font-size:clamp(14px,1.25vw,17px);font-weight:850;align-items:center;justify-content:space-between;padding:16px 20px}
+.camp-masthead .hero-ctas>.button-lime{background:#cef977;color:#123c29;border-color:#cef977}
+.camp-masthead .hero-ctas>.button-ghost{background:transparent;border:1px solid #719782;color:#173f2c}
+.camp-masthead .hero-ctas>.button-ghost:hover{background:#dbe9d5}
+.camp-masthead .hero-capacity{width:100%;max-width:none;color:#16452e;background:#e3edde;border:1px solid #c5d7bf;margin:14px 0 0;padding:19px 23px 18px;border-radius:12px;box-shadow:none}
+.camp-masthead .hero-capacity-top{color:#234a33}
+.camp-masthead .hero-capacity-top strong{color:#134d35;font-size:clamp(21px,2.2vw,29px)}
+.camp-masthead .cap-signal{color:#26533c}
+.camp-masthead .cap-signal i{background:#21966c;box-shadow:0 0 0 5px rgba(33,150,108,.1)}
+.camp-masthead .hero-capacity-track{height:9px;background:#c4d4c0;border-radius:999px}
+.camp-masthead .hero-capacity-track>div{height:100%;background:#3b9867;border-radius:999px}
+.camp-masthead .hero-capacity-bottom{color:#58715d}
+.camp-masthead .hero-capacity-bottom b{color:#206e4a}
+/* Preserve the existing 2-3 month card notice, but move it BELOW the hook
+   and make it an understated product-footer note rather than a competing bar. */
+.camp-masthead .installment-teaser{z-index:auto;background:transparent;color:#3a6a51;margin:14px 0 0}
+.camp-masthead .installment-teaser-inner{width:100%;min-height:0;padding:0;display:flex;justify-content:flex-start;align-items:center;gap:6px 14px;flex-wrap:wrap}
+.camp-masthead .installment-teaser-label{font-size:11px;color:#236a47;font-weight:800}
+.camp-masthead .installment-teaser-desc,.camp-masthead .installment-teaser-desc strong{font-size:11px;color:#3a6650}
+.camp-masthead .installment-teaser a{color:#23764e;font-size:11px}
+.camp-masthead .mobile-menu{z-index:99}
+/* Immersive photo experience after booking module; four cards are borderless. */
+.hero-experience-strip{background:#092b21;padding:clamp(20px,2.4vw,33px) 0 clamp(24px,2.8vw,40px)}
+.hero-experience-strip .hero-media{position:relative;isolation:isolate;width:100%;height:auto;min-height:clamp(680px,56vw,780px);margin:0;border:0;border-radius:3px;overflow:hidden}
+.hero-experience-strip .hero-media:before{background:linear-gradient(180deg,rgba(4,35,24,.03) 0%,rgba(4,35,24,.19) 24%,rgba(4,35,24,.89) 59%,rgba(2,30,22,.98) 100%)}
+.hero-experience-strip .hero-program{left:clamp(16px,3vw,38px);right:clamp(16px,3vw,38px);bottom:clamp(17px,2.7vw,33px);max-width:900px;gap:clamp(12px,1.4vw,18px)}
+.hero-experience-strip .hero-program-head h2{font-size:clamp(32px,3.2vw,44px)}
+.hero-experience-strip .hero-program-card{border:0!important;border-top:0!important;outline:0!important;box-shadow:none!important}
+.hero-experience-strip .hero-program-card-ucl{border:0!important}
+@media(max-width:780px){
+  .hook-intro .hook-layout{min-height:0;padding:clamp(54px,10vw,77px) 0 clamp(59px,11vw,83px)}
+  .hook-intro h1{font-size:clamp(43px,8.25vw,65px)}
+  .camp-masthead .camp-masthead-inner{padding-top:31px;padding-bottom:34px}
+  .camp-masthead .hero-ctas>.button{min-height:57px;font-size:14px;padding:14px 16px}
+  .camp-masthead .hero-capacity{padding:19px;border-radius:10px}
+  .hero-experience-strip .hero-media{height:auto;min-height:680px}
+}
+@media(max-width:520px){
+  .hook-intro .hook-layout{padding:53px 0 62px;min-height:0}
+  .hook-intro .hero-hook-label{font-size:10px}
+  .hook-intro h1{font-size:clamp(37px,10.1vw,51px);line-height:1.15;margin:26px 0 22px}
+  .hook-intro .hero-lead{font-size:14px;line-height:1.63;margin-bottom:13px}
+  .hook-intro .hero-sub{font-size:13px;line-height:1.63}
+  .camp-masthead .camp-masthead-inner{padding-top:22px;padding-bottom:26px}
+  .camp-masthead .hero-ctas{gap:8px;margin-top:18px}
+  .camp-masthead .hero-ctas>.button{min-height:52px;font-size:clamp(11px,3.25vw,13px);padding:13px 11px;gap:7px}
+  .camp-masthead .hero-ctas>.button span{font-size:16px}
+  .camp-masthead .hero-capacity{margin-top:10px;padding:15px 13px;border-radius:8px}
+  .camp-masthead .hero-capacity-top{font-size:11px}
+  .camp-masthead .hero-capacity-top strong{font-size:clamp(18px,5vw,22px)}
+  .camp-masthead .hero-capacity-bottom{font-size:11px;gap:5px}
+  .camp-masthead .hero-capacity-bottom b{font-size:11px}
+  .camp-masthead .installment-teaser-inner{display:flex;gap:3px 11px;padding:0;min-height:0}
+  .camp-masthead .installment-teaser-label,.camp-masthead .installment-teaser-desc,.camp-masthead .installment-teaser-desc strong{font-size:10px}
+  .camp-masthead .installment-teaser a{font-size:10px}
+  .hero-experience-strip{padding:13px 0 21px}
+  .hero-experience-strip .hero-media{height:593px;min-height:593px}
+  .hero-experience-strip .hero-program{left:12px;right:12px;bottom:12px;gap:12px}
+  .hero-experience-strip .hero-program-head h2{font-size:clamp(25px,7.2vw,31px)}
+  .hero-experience-strip .hero-program-card{min-height:156px}
+}
+@media(max-width:350px){
+  .hook-intro h1{font-size:36px}
+  .hero-experience-strip .hero-media{height:591px;min-height:591px}
+  .hero-experience-strip .hero-program-card{padding:10px 8px;min-height:156px}
+}
+
+
+/* FINAL NAVIGATION LOCATION — inside the opening hook, top-right.
+   Same DOM IDs/classes preserve the existing JS menu and booking handlers. */
+.hook-intro{z-index:80}
+.hook-intro .nav-toggle{
+  position:absolute;
+  top:clamp(18px,2.6vw,34px);
+  right:0;
+  z-index:102;
+  display:flex!important;
+  flex:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:46px;
+  margin:0;
+  padding:8px;
+  border:1px solid rgba(224,244,224,.42);
+  border-radius:5px;
+  background:rgba(246,255,244,.075);
+  color:#effaf0;
+  transition:background .18s ease,border-color .18s ease;
+}
+.hook-intro .nav-toggle:hover{
+  background:rgba(246,255,244,.14);
+  border-color:rgba(224,244,224,.66);
+}
+.hook-intro .nav-toggle span{
+  display:block;
+  width:22px;
+  height:2px;
+  margin:3px 0;
+  border-radius:1px;
+  background:#effaf0;
+}
+.hook-intro .mobile-menu{
+  position:absolute;
+  z-index:103;
+  top:clamp(72px,6.2vw,92px);
+  right:0;
+  left:auto;
+  width:min(335px,100%);
+  padding:13px 19px 18px;
+  border:1px solid rgba(225,244,224,.18);
+  border-radius:6px;
+  color:#fff;
+  background:#12382c;
+  box-shadow:0 22px 50px rgba(1,26,17,.32);
+}
+.hook-intro .mobile-menu[hidden]{display:none!important}
+@media(max-width:780px){
+  .hook-intro .hook-layout{padding-top:83px}
+  .hook-intro .nav-toggle{top:17px;width:44px;height:44px}
+  .hook-intro .mobile-menu{top:67px}
+}
+@media(max-width:520px){
+  .hook-intro .hook-layout{padding-top:81px}
+  .hook-intro .nav-toggle{top:15px;width:42px;height:42px}
+  .hook-intro .nav-toggle span{width:20px}
+  .hook-intro .mobile-menu{top:64px;width:min(305px,100%)}
+}
